@@ -256,36 +256,65 @@ nav .social-links {
 .testimonials {
     background: #F8F9FA;
     min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
 }
 
 
-
-
-
+.testimonial-heading {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    padding-top: 5rem;
+    text-align: center;
+}
 
 
 /*       Testimonials  Section  */
 
 
-.testimonial {
+.testimonials .testimonial {
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.testimonial-image {
+    margin: 2rem;
+    flex: 1 1 30rem;
 }
 
 .testimonial-image img {
-    max-width: 400px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
 }
 
 
 .description{
+    background: #fff;
+    position: absolute;
+    flex: 1 1 30rem;
+    top: 50%;
+    left: 50%;
 
+    
     z-index: 1;
+    line-height: 3;
     padding: 2rem;
     margin: 2rem;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+
     box-shadow: 0 10px 10px rgba(0,0,0,.1);
 }
 
 .description p {
-    text-align: center;
+    text-align: left;
 }
 
 
